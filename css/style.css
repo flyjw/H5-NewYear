@@ -527,14 +527,14 @@ body {
     }
 }
 
-#page2 > .p2_2016 {
+#page2 > .p2_2017 {
     position: absolute;
     top: 0;
     right: 0;
     left: 0;
     bottom: 0;
     margin: auto;
-    background: url("../images/p2_2016.png") no-repeat center center;
+    background: url("../images/p2_2017.png") no-repeat center center;
     background-size: 100%;
     width: 27.5vw;
     height: 6.24vh
@@ -558,18 +558,6 @@ body {
 }
 #page3 > .bg {
     background: url("../images/p3_bg.jpg") no-repeat center center;
-    background-size: 100%
-}
-
-#page3 > .p3_logo {
-    width: 34.6875vw;
-    height: 6.3275vh;
-    position: absolute;
-    top: 7.82vh;
-    right: 0;
-    left: 0;
-    margin: auto;
-    background: url("../images/p3_logo.png") no-repeat center center;
     background-size: 100%
 }
 
