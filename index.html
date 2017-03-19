@@ -39,6 +39,30 @@
     <audio autoplay="true">
         <source src="audio/happy.mp3" type="audio/mpeg">
     </audio>
+    <div id="testid" class="classname">
+        <h2>请在移动设备上查看Demo演示效果，谢谢！</h2>
+    </div>
+    <script type="text/javascript">
+    function browserRedirect() {
+        var sUserAgent = navigator.userAgent.toLowerCase();
+        var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
+        var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
+        var bIsMidp = sUserAgent.match(/midp/i) == "midp";
+        var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
+        var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
+        var bIsAndroid = sUserAgent.match(/android/i) == "android";
+        var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
+        var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
+        if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
+            // testId.style.cssText = 'display: none';
+        } else {
+
+            var testId = document.getElementById("testid");
+            testId.style.cssText = 'display: block';
+        }
+    }
+    browserRedirect();
+    </script>
 </body>
 
 </html>
